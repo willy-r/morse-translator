@@ -1,12 +1,12 @@
 # morse-translator
 
-A simple [Morse Code](https://en.m.wikipedia.org/wiki/Morse_code) translator written in Python.
+A simple [Morse Code](https://en.wikipedia.org/wiki/Morse_code) translator written in Python.
 
 ---
 
 ## Instalation
 
-- You need Python 3.9 installed in your computer.
+- You need Python 3.6+ installed in your computer.
 
 ### Clone
 
@@ -18,6 +18,12 @@ A simple [Morse Code](https://en.m.wikipedia.org/wiki/Morse_code) translator wri
 
 ```shell
 $ cd morse-translator
+```
+
+- Install the requirements:
+
+```shell
+$ pip install -r requirements.txt
 ```
 
 ---
@@ -40,13 +46,22 @@ $ python morse.py -f MORSE
 
 - MORSE is a Morse Code surrounded by **'** or **"**, using '.' or '-', separating letters by spaces and words by '/'.
 
-> **Note**: If the pattern for both options is not in the [patters.json](https://github.com/willy-r/morse-translator/blob/main/patterns.json) file, the pattern will be replaced with '#'.
+> **Note**: If the character for both options is not in the [morse\_tables.json](https://github.com/willy-r/morse-translator/blob/main/morse_code_tables.json) file, the character will be replaced with '#'.
 
-Enter `$ python morse.py -h` to see more commands.
+To play the Morse Code sound use the `-s` option in both options:
+
+```shell
+$ python morse.py -s -t TEXT
+$ python morse.py -s -f MORSE
+```
+
+- The sound is just a for loop runing all the sounds for each character (available on the [Morse Code wikipedia](https://en.wikipedia.org/wiki/Morse_code)) using [playsound](https://github.com/TaylorSMarks/playsound) module. Don't follow any rule of timming and speeds, and this can be improved later.
+
+Enter `$ python morse.py -h` to see all commands.
 
 ---
 
-## Example
+## Examples
 
 - To Morse Code examples:
 
