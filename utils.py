@@ -23,5 +23,5 @@ def get_char(morse_code: str) -> str:
     return PATTERNS['from'].get(morse_code, '#')
 
 
-def get_sound_path(morse_code: str) -> Union[str, None]:
-    return PATTERNS['sounds'].get(morse_code)
+def get_sound_path(char: str) -> Union[str, None]:
+    return PATTERNS['sounds'].get(char)
