@@ -4,7 +4,7 @@ import argparse
 def get_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(prog='morse',
                                 description='Translate to and from Morse Code')
-    p.version = '1.1'
+    p.version = '1.1.0'
     g = p.add_mutually_exclusive_group(required=True)
 
     p.add_argument('-v',

@@ -29,8 +29,8 @@ def from_morse(morse_code: str) -> str:
 
 def morse_code_sound(morse_code: str) -> None:
     """Play sound for Morse Code."""
-    for code in morse_code:
-        path = get_sound_path(code)
+    for char in morse_code:
+        path = get_sound_path(char)
         if path is not None:
             playsound(path)
 

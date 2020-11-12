@@ -55,7 +55,7 @@ $ python morse.py -s -t TEXT
 $ python morse.py -s -f MORSE
 ```
 
-- The sound is just a for loop runing all the sounds for each character (available on the [Morse Code wikipedia](https://en.wikipedia.org/wiki/Morse_code)) using [playsound](https://github.com/TaylorSMarks/playsound) module. Don't follow any rule of timming and speeds, and this can be improved later.
+- The sound is just a for loop runing the sounds (available on the [Morse Code wikipedia](https://en.wikipedia.org/wiki/Morse_code)) for the '.' and '-' characters on the Morse Code, using [playsound](https://github.com/TaylorSMarks/playsound) module. Don't follow any rule of timming and speeds, and this can be improved later.
 
 Enter `$ python morse.py -h` to see all commands.
 
