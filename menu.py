@@ -1,24 +1,14 @@
-from morse import to_morse, from_morse,morse_code_sound,main
+from morse import to_morse, from_morse,morse_code_sound
 from cli import get_args
 from time import sleep
-
-def launch():
-    prompt = input('Do you want to use the command based program(1) or the text based(2): ')
-    if prompt == '1':
-        main()
-
-    elif prompt == '2':
-        lambda:run()
-    else:
-        print('Error')
+import subprocess
     
-                   
-
 def run():
 
-    print('What do you want do do? \n1.Transalte from morse to text\n2.Translate from text to morse')
+    print('What do you want do do? \n1.Transalte from text to morse\n2.Translate from morse to text.')
     print('Or enter Q to quit.')
     choice = input('Enter your choice(1/2): ')
+    
 
     if choice == '1':
         args = input('Your sentence:')
@@ -53,4 +43,4 @@ def run():
 
     else:
         print('Invalide choice')
-launch()
+run()

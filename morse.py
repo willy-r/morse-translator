@@ -33,8 +33,7 @@ def morse_code_sound(morse_code: str) -> None:
         path = get_sound_path(char)
         if path is not None:
             playsound(path)
-
-#This a not used function
+            
 def main() -> None:
     args = get_args()
     if args._to is not None:
@@ -46,3 +45,6 @@ def main() -> None:
         print(from_morse(args._from))
         if args.sound:
             morse_code_sound(args._from)
+
+if __name__ == '__main__':
+    main()
