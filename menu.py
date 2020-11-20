@@ -1,6 +1,18 @@
-from morse import to_morse, from_morse,morse_code_sound
+from morse import to_morse, from_morse,morse_code_sound,main
 from cli import get_args
 from time import sleep
+
+def launch():
+    prompt = input('Do you want to use the command based program(1) or the text based(2): ')
+    if prompt == '1':
+        main()
+
+    elif prompt == '2':
+        lambda:run()
+    else:
+        print('Error')
+    
+                   
 
 def run():
 
@@ -41,7 +53,4 @@ def run():
 
     else:
         print('Invalide choice')
-run()
-
-print(to_morse('This is a test'))
-print(from_morse('.'))
+launch()
