@@ -11,9 +11,10 @@ def run():
     if choice == '1':
         args = input('Your sentence:')
         sound_choice = input('Want to play the sound?(y/n): ')
-        result = from_morse(args)
+        result = to_morse(args)
         #print(result)
         if sound_choice == 'y' and args is not None:
+            print(args)
             print(result)
             morse_code_sound(result)
             run()
@@ -24,7 +25,7 @@ def run():
     elif choice == '2':
         args = input('The Morse code:')
         sound_choice = input('Want to play the sound?(y/n): ')
-        result = to_morse(args)
+        result = from_morse(args)
         if sound_choice == 'y' and result is not None:
             print(result)
             morse_code_sound(args)
@@ -40,5 +41,7 @@ def run():
 
     else:
         print('Invalide choice')
-
 run()
+
+print(to_morse('This is a test'))
+print(from_morse('.'))
