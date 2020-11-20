@@ -10,7 +10,7 @@ A simple [Morse Code](https://en.wikipedia.org/wiki/Morse_code) translator writt
 
 ### Clone
 
-- Clone this repo to your local machine using `https://github.com/willy-r/morse-translator`
+- Clone this repo to your local machine using `https://github.com/willy-r/morse-translator.git`
 
 ### Setup
 
@@ -107,7 +107,7 @@ MA##
     - 🍴 Fork this repo!
 
 - **Option 2**
-    - 👯 Clone this repo to your local machine using `https://github.com/willy-r/morse-translator`
+    - 👯 Clone this repo to your local machine using `https://github.com/willy-r/morse-translator.git`
 
 ### Step 2
 
